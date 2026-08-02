@@ -9,7 +9,7 @@
 > An inclusive banking simulation built with **Visual Basic (.NET)**, engineered around one core principle: accessibility first. Integrated **text-to-speech voice output** reads balances, transaction prompts, and confirmations aloud in real time — giving visually impaired users the independence to check balances, deposit, and withdraw funds entirely on their own.
 
 <p align="center">
-  <img src="git_images/ATM_panel.png" alt="VB Bank Simulator — ATM Panel" width="80%" style="border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.2);">
+  <img src="github_Assets/ATM_panel.png" alt="VB Bank Simulator — ATM Panel" width="80%" style="border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.2);">
 </p>
 
 ---
@@ -75,17 +75,17 @@ Every transaction path in the app is dual-channel by design: the same event that
   <tr>
     <td width="33%" align="center">
       <b>Login</b><br>
-      <img src="git_images/login_image.png" width="100%"><br>
+      <img src="github_Assets/login_image.png" width="100%"><br>
       <sub>Secure account sign-in with spoken prompts.</sub>
     </td>
     <td width="33%" align="center">
       <b>Main menu</b><br>
-      <img src="git_images/menu_image.png" width="100%"><br>
+      <img src="github_Assets/menu_image.png" width="100%"><br>
       <sub>Voice-guided navigation between account actions.</sub>
     </td>
     <td width="33%" align="center">
       <b>ATM panel</b><br>
-      <img src="git_images/ATM_panel.png" width="100%"><br>
+      <img src="github_Assets/ATM_panel.png" width="100%"><br>
       <sub>Deposit, withdraw, and balance checks with audio confirmation.</sub>
     </td>
   </tr>
@@ -132,7 +132,7 @@ cd CppBankSimulator
 |---|---|
 | `*.vb` | Core source code — business logic, event handlers, and text-to-speech engine integration |
 | `*.sln` / `*.vbproj` | Visual Studio solution and project configuration files |
-| `git_images/` | Screenshots used in this README |
+| `github_Assets/` | Screenshots used in this README |
 
 ---
 
