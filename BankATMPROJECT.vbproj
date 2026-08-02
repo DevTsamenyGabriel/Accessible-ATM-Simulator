@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A54D006C-F24A-48AE-8219-D5DDE281D231}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BankATMPROJECT.My.MyApplication</StartupObject>
+    <RootNamespace>BankATMPROJECT</RootNamespace>
+    <AssemblyName>BankATMPROJECT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BankATMPROJECT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BankATMPROJECT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>money.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ATMMENU.Designer.vb">
+      <DependentUpon>ATMMENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ATMMENU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLOGIN.Designer.vb">
+      <DependentUpon>GLOGIN.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GATMMENU.Designer.vb">
+      <DependentUpon>GATMMENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GATMMENU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ATMMENU.resx">
+      <DependentUpon>ATMMENU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLOGIN.resx">
+      <DependentUpon>GLOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GATMMENU.resx">
+      <DependentUpon>GATMMENU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkmain.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-high-end-photorealistic-web-applicatio_JwvC1Wm4QumUKB3fMRV4_w_vhNUCxLJRhmMLbyjoqFoPA.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-photorealistic-cinematic-close-up-of-a_f9KdQ9OBTZivR8WCoeFp9Q_TYTEKOXuR1iTWBrlpeJOHA.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-photorealistic-high-end-web-applicatio_5Rv70SBHTc-ywwNSt-yT3g_vhNUCxLJRhmMLbyjoqFoPA.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-photorealistic-high-end-web-applicatio_aT4-j4H-QdCPOw2SsD9XiA_vhNUCxLJRhmMLbyjoqFoPA.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-photorealistic-high-end-web-applicatio_LyqTsKXzTdGktdpuV2KtcA_vhNUCxLJRhmMLbyjoqFoPA.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atmpure %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atmpure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\best-landing-page-examples.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_8vzw928vzw928vzw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_wg2hcswg2hcswg2h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_wg2hcswg2hcswg2h_imgupscaler.ai_Sharpener_2K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-change-user-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-button-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-numbers-input-form-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-passcode-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-show-password-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-female-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_2mbyq32mbyq32mby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccpure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_qcvyxgqcvyxgqcvy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-welcome-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ATMIMAGE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atmpure1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp7829644-blair-witch-game-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-full-battery-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-signal-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gemini_Generated_Image_9lxctb9lxctb9lxc.ico" />
+    <Content Include="money.ico" />
+    <None Include="Resources\icons8-ai-50.png" />
+    <None Include="Resources\Gemini_Generated_Image_i0pblli0pblli0pb.png" />
+    <None Include="Resources\icons8-log-out-64.png" />
+    <None Include="Resources\icons8-menu-64.png" />
+    <None Include="Resources\icons8-exit-48.png" />
+    <None Include="Resources\icons8-exit-30 %282%29.png" />
+    <None Include="Resources\icons8-exit-30 %281%291.png" />
+    <None Include="Resources\icons8-exit-30 %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
